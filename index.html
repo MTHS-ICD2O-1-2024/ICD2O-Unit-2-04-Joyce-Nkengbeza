@@ -3,7 +3,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Adress With Js File" />
+    <meta name="description" content="Area Of Triangle With JS" />
     <meta name="keywords" content="mths, icd2o" />
     <meta name="author" content="Joyce Nkengbeza" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@
       href="./favicon-16x16new.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <title>Adress With JS File</title>
+    <title>Area Of Triangle With JS</title>
   </head>
 
   <body>
@@ -43,54 +43,57 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Adress With JS File</span>
+          <span class="mdl-layout-title">Area Of Triangle With JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content">Adress</div>
+        <div class="page-content">Area</div>
         <img src="./images/images.jpeg" />
         <div class="page-content">Please enter the following:</div>
         <br />
         <form>
           <!-- Numeric Textfield -->
-          <p>Street Number</p>
+          <p>Base Of Triangle</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="street-number"
+              id="base-length"
             />
-            <label class="mdl-textfield__label" for="age-entered"
-              >street name here...</label
+            <label class="mdl-textfield__label" for="base-length"
+              >Base Length...</label
             >
+            <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-          <!-- Simple Textfield -->
-          <p>Street Name</p>
+          <!-- Numeric Textfield -->
+          <p>Height of Triangle...</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
-              id="street-name"
+              id="height-length"
             />
             <label class="mdl-textfield__label" for="sample1"
-              >street name here...</label
+              >Height Length</label
             >
+            <!-- class "mdl-textfield__error" -->
+            <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
           <!-- Raised button with ripple -->
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="enterClicked()"
+            onclick="calculateAreaOfTriangle()"
             type="button"
           >
-            Enter
+            Calculate
           </button>
         </form>
         <br />
         <div class="page-content-answer">
-          <div id="street-adress"></div>
+          <div id="area"></div>
         </div>
       </main>
     </div>

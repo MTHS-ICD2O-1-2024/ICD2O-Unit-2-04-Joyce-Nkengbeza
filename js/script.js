@@ -4,11 +4,16 @@
 // Created on: Feb 2025
 // This file contains the JS functions for index.html
 
-function enterClicked() {
+"use strict"
+
+function calculateAreaOfTriangle() {
   // input
-  const streetnumber = parseInt(document.getElementById("street-number").value)
-  const streetname = document.getElementById("street-name").value
+  const baselength = parseInt(document.getElementById('base-length').value)
+  const heightlength = parseInt(document.getElementById('height-length').value)
+
+  // process
+    const areaOfTriangle = (baselength * heightlength) /2
+
   // output
-  document.getElementById("street-adress").innerHTML =
-    "Your Adress Is: " + streetnumber + " " + streetname + "."
+  document.getElementById('area').innerHTML = 'Area is: ' + areaOfTriangle + ' cm²'
 }
